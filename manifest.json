@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "eBay Price Tracker",
+  "version": "1.0",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["*://*.ebay.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
